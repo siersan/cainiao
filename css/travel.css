@@ -1,0 +1,155 @@
+
+body{
+    font-family:"Microsoft yahei";
+    color:#5a5a5a;
+    cursor:url("../cursor/Hello_Normal.cur"),pointer;
+}
+li{list-style: none;}
+h1,h2,h3,h4,h5,h6{
+    text-transform:uppercase;
+}
+a,a:hover,a:focus{
+    text-decoration:none;
+}
+/*navbar page style start*/
+#tf-menu{
+    padding:20px;
+    transition:all 0.5s;
+}
+#tf-menu a.navbar-brand{
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:900;
+    color:#fff;
+}
+#tf-menu.navbar-default{
+    background-color:rgba(248,248,248,0);
+    border-color:rgba(231,231,231,0);
+}
+#tf-menu.navbar-default .navbar-nav > li > a{
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:1px;
+    color:#fff;
+}
+#tf-menu.navbar-default .navbar-nav > li > a:hover{
+     color:#F27567 ;
+      background-color:transparent;
+}
+.navbar-toggle{
+    border-radius:0;
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+    background-color:#ec586a;
+    border-color:#ec586a;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar,.navbar-default .navbar-toggle:focus > .icon-bar{
+    background-color:#fff;
+}
+.on{
+    background-color:#222 !important;
+    color:#fff;
+    padding:0 !important;
+}
+/*end style navbar page*/
+/*tf-home start*/
+#tf-home{
+    background-image:url(../images/about/3.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    color:#fff;
+}
+#tf-home .overlay{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.43) 17%, rgba(0,0,0,0.36) 35%, rgba(0,0,0,0.225) 62%, rgba(0,0,0,0.2) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.36)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.43) 17%,rgba(0,0,0,0.36) 35%,rgba(0,0,0,0.25) 62%,rgba(0,0,0,0.2) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.43) 17%,rgba(0,0,0,0.36) 35%,rgba(0,0,0,0.25) 62%,rgba(0,0,0,0.2) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.43) 17%,rgba(0,0,0,0.36) 35%,rgba(0,0,0,0.25) 62%,rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.43) 17%,rgba(0,0,0,0.36) 35%,rgba(0,0,0,0.25) 62%,rgba(0,0,0,0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 );
+    height:750px;
+}
+.content{
+    padding:20% 0 0;
+}
+@media only screen and (max-width: 600px) {
+	.content{
+   	 padding:50% 0 0;
+}
+}
+.colors{
+    color:#e96f62;
+}
+#tf-home p.lead{
+    color:#e3e3e3;
+}
+/*tf-home end*/
+/*tf-touch page start*/
+.tf-touch{
+	background:#9B9B9B;
+	position:fixed;
+	right:0;
+	top:40%;
+	z-index:999;
+}
+.tf-touch ul li> a{
+	transition: all 0.5s;
+}
+.tf-touch ul li> a:hover,.tf-touch ul li> a:focus{
+    background:#F27567;
+}
+.tf-touch ul li> a i.fa{
+	color:#fff;
+	font-size:25px;
+}
+.tf-touch ul li>a.active{
+	background: #F27567;
+}
+/*tf-touch page end*/
+/*<!--footer page start-->*/
+.tf-footer{
+	margin-top:30px;
+}
+.tf-footer .con p a{
+	color:#000;
+	font-size:12px;
+}
+.tf-footer .con{
+	margin-bottom:15px;
+}
+.tf-footer .con .img-1{
+	width:109px;
+	height:110px;
+}
+.tf-footer .con p span>i{
+	border-radius:50%;
+	border:1px solid #eee;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	background: #eee;
+	transition: all 0.5s;
+}
+.tf-footer .con p span>i.fa1:hover{
+background: #47DAFF;
+color:#fff;
+}
+.tf-footer .con p span>i.fa2:hover{
+background: #4C81D2;
+color:#fff;
+}
+.tf-footer .con p span>i.fa3:hover{
+background:#FF6252;
+color:#fff;
+}
+.tf-footer .con p span>i.fa4:hover{
+background:#E43333;
+color:#fff;
+}
+.tf-footer .con p span>i.fa5:hover{
+background:#FF4978;
+color:#fff;
+}
+/*<!--footer page end-->*/

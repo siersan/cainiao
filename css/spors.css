@@ -54,7 +54,7 @@ a,a:hover,a:focus{
 /*end style navbar page*/
 /*tf-home start*/
 #tf-home{
-    background-image:url(../images/about/back1.jpg);
+    background-image:url(../images/about/3.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
@@ -69,10 +69,20 @@ a,a:hover,a:focus{
     background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.43) 17%,rgba(0,0,0,0.36) 35%,rgba(0,0,0,0.25) 62%,rgba(0,0,0,0.2) 100%);
     background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.43) 17%,rgba(0,0,0,0.36) 35%,rgba(0,0,0,0.25) 62%,rgba(0,0,0,0.2) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 );
-    height:500px;
+    height:750px;
 }
 .content{
-    padding:15% 0 0;
+    padding:20% 0 0;
+}
+@media only screen and (max-width: 600px) {
+	.content{
+   	 padding:55% 0 0;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.content{
+   	 padding:35% 0 0;
+}
 }
 .colors{
     color:#e96f62;
@@ -84,57 +94,45 @@ a,a:hover,a:focus{
 /*<!--tf-ports start-->*/
 .tf-ports{
 	margin:60px 0;
+	background: #F4F4F4;
 }
-.tf-ports .container{
-	border:1px solid red;
+.col-mg{
+	margin-bottom:25px;
+	background: #fff;
 }
-.tf-ports .banner{
+.row-col:hover{
+	box-shadow: 0 0 20px #C0C0C0;
+	}
+.row-col{
+	position:relative;
+	overflow: hidden;
+}
+.txt{
+	margin-top:30px;
+}
+.Color{
+	position:absolute;
+	width:100%;
 	height:100%;
-	background: greenyellow;
+	background: rgba(0,0,0,0.5);
+	top:0;
+	left:0;
+	display: none;
+	transition:0.5s;
 }
- .banner .pic ul li{
-	background: no-repeat;
-	background-size:cover ;
-	background-position: center;
-	height:100%;
+/*.row-col:hover .Color{
+	display: block;
+	}*/
+.row-col>img{
+	width:100%;
+	height:250px;
+	transition: 0.5s ease-in-out;
+	opacity: 0.7;
 }
-.banner .pic ul li:nth-child(1){
-	background: url(../images/1p.jpg);
+.row-col:hover > img{
+	transform: scale(1.2);
+	opacity: 1;
 }
-.banner .pic ul li:nth-child(2){
-	background: url(../images/back4 (1).jpg);
-}
-.banner .pic ul li:nth-child(3){
-	background: url(../images/back4 (2).jpg);
-}
-.banner .pic ul li:nth-child(4){
-	background: url(../images/back4 (1).jpg);
-}
-.banner .pic ul li:nth-child(5){
-	background: url(../images/back4 (2).jpg);
-}
-.banner .pic ul li:nth-child(6){
-	background: url(../images/back4 (1).jpg);
-}
-/*.banner .pic ul li:nth-child(1){
-	background-image: url(../images/img1.jpg) ;
-	
-}
-.banner .pic ul li:nth-child(2){
-	background: url(../images/img2.jpg) ;
-}
-.banner .pic ul li:nth-child(3){
-	background: url(../images/img3.jpg) ;
-}
-.banner .pic ul li:nth-child(4){
-	background: url(../images/img4.jpg) ;
-}
-.banner .pic ul li:nth-child(5){
-	background: url(../images/img5.jpg);
-}
-.banner .pic ul li:nth-child(6){
-	background: url(../images/img6.jpg) ;
-}*/
 /*<!--tf-ports end-->*/
 /*tf-touch page start*/
 .tf-touch{
@@ -142,6 +140,7 @@ a,a:hover,a:focus{
 	position:fixed;
 	right:0;
 	top:40%;
+	z-index:999;
 }
 .tf-touch ul li> a{
 	transition: all 0.5s;
